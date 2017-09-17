@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tenancyblurbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ooglootenants.andorid.com.tenancyapp.Update_Tenant">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvtv_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="Tenancy"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/R1_Newtenant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvtv_update">
+
+                <EditText
+                    android:id="@+id/Name_updatetenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Name"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/Phone_updatetenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Name_updatetenant"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Phone No."
+                    android:inputType="phone"
+                    android:textColor="#fff"
+                    android:textColorHint="@android:color/white"/>
+
+                <EditText
+                    android:id="@+id/CNIC_updatetenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Phone_updatetenant"
+                    android:layout_margin="15dp"
+                    android:hint="Enter CNIC"
+                    android:textColorHint="@android:color/white"
+                    android:inputType="text"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/Email_updatetenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CNIC_updatetenant"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#fff"
+                    android:textColorHint="@android:color/white"/>
+
+                <RelativeLayout
+                    android:id="@+id/R_Rentamount_update"
+                    android:layout_below="@id/Email_updatetenant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:id="@+id/tv_Rentamount_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rent Amount:"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:padding="15dp"/>
+                    <EditText
+                        android:id="@+id/Et_Rentamount_update"
+                        android:layout_toRightOf="@+id/tv_Rentamount_update"
+                        android:hint="Amount"
+                        android:textColor="#fff"
+                        android:inputType="number"
+                        android:layout_width="100dp"
+                        android:textColorHint="@android:color/white"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/R_Security_update"
+                    android:layout_below="@id/R_Rentamount_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:id="@+id/tv_Security_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Security Amount:"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:padding="15dp"/>
+                    <EditText
+                        android:id="@+id/Et_Security_update"
+                        android:layout_toRightOf="@+id/tv_Security_update"
+                        android:hint="Security"
+                        android:textColor="#fff"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/R_Paymentdate_update"
+                    android:layout_below="@id/R_Security_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/tv_Paymentdate_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Aloting Date:"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <TextView
+                        android:id="@+id/Et_Paymentdate_update"
+                        android:textColor="@android:color/white"
+                        android:layout_toRightOf="@+id/tv_Paymentdate_update"
+                        android:hint="Date"
+                        android:layout_margin="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_width="100dp"
+                        android:textColorHint="@android:color/white"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/Iv_Paymentdate_update"
+                        android:layout_toRightOf="@+id/Et_Paymentdate_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calender"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/R_Received_Amount_Update"
+                    android:layout_below="@id/R_Paymentdate_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:id="@+id/tv_Received_Amount_Update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rent Amount Received:"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:padding="15dp"/>
+                    <EditText
+                        android:id="@+id/Et_Received_Amount_Update"
+                        android:layout_toRightOf="@+id/tv_Received_Amount_Update"
+                        android:hint="Amount"
+                        android:textColor="#fff"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvforalert_Update"
+                        android:layout_below="@+id/tv_Received_Amount_Update"
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:paddingLeft="15dp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Amount received after Receiving it OR 0 !!!"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/R_Payment_Receiving_Date_Update"
+                    android:layout_below="@id/R_Received_Amount_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/tv_Payment_Receiving_Date_Update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Receiving Date:"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <TextView
+                        android:id="@+id/Et_Payment_Receiving_Date_Update"
+                        android:textColor="@android:color/white"
+                        android:layout_toRightOf="@+id/tv_Payment_Receiving_Date_Update"
+                        android:hint="Date"
+                        android:layout_margin="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_width="100dp"
+                        android:textColorHint="@android:color/white"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/Iv_Payment_Receiving_Date_Update"
+                        android:layout_toRightOf="@+id/Et_Payment_Receiving_Date_Update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calender"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/R_Notification_update"
+                    android:layout_below="@+id/R_Payment_Receiving_Date_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_Notification_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Notifications:"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+                    <CheckBox
+                        android:id="@+id/Cb_Notification_update"
+                        android:layout_toRightOf="@+id/tv_Notification_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/R_Notification_update"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/tenancyloginoradd">
+
+                    <TextView
+                        android:id="@+id/Update_Newtenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Add Tenant"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/upno_Internet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/Update_Newtenant"
+                        android:text="please connect to internet"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        android:layout_alignParentBottom="true">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

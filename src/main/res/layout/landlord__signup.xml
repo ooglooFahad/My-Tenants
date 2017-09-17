@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tenancyblurbg"
+    tools:context="ooglootenants.andorid.com.tenancyapp.Landlord_Signup">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/tvtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tenancy"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                />
+
+            <RelativeLayout
+                android:id="@+id/R_Signup"
+                android:layout_below="@id/tvtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/tv1_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv2_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv1_signin"
+                    android:text="  Login!"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#00BCD4"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/R1_Signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/R_Signup">
+
+                <EditText
+                    android:id="@+id/Name_Signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Name"
+                    android:textColorHint="@android:color/white"
+                    android:inputType="text"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/Password_Signup"
+                    android:layout_below="@+id/Name_Signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Enter 10 digit Password"
+                    android:maxLength="10"
+                    android:inputType="textPassword"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/Phone_Signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password_Signup"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Phone No."
+                    android:inputType="phone"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/CNIC_Signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Phone_Signup"
+                    android:layout_margin="15dp"
+                    android:hint="Enter CNIC"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/Email_Signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CNIC_Signup"
+                    android:layout_margin="15dp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="#fff" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Email_Signup"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/tenancyloginoradd">
+
+                    <TextView
+                        android:id="@+id/Signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Sign Up"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

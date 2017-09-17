@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "952190630980",
+    "project_id": "tenancyapp-164506"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952190630980:android:5b4b40bfc4fcee43",
+        "android_client_info": {
+          "package_name": "ooglootenants.andorid.com.tenancyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952190630980-ardqn1k1qglaq9mmn4re4f4f8ehmkifp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "952190630980-jfm2aarsrjj20pd1i13cvb0qnekb0ep9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ooglootenants.andorid.com.tenancyapp",
+            "certificate_hash": "d0e28d2627f3d73b6bbc1608f6f71eed47b205ce"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3TpmAFMqXX5c2M3L-qkcmFhE_kDFXPTk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Tenants</string>
+    <string name="facebook_app_id">1833815353502295</string>
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-6284350165471951/4576838402</string>
+    <string name="interstitial_full_screen">ca-app-pub-6284350165471951/6053571608</string>
+
+    <string name="gmaillogin">Continue with Gmail</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">My Tenants!</string>
+    <string name="slide_1_desc">The easiest and simplest way to manage your tenants within a single app!</string>
+
+    <string name="slide_2_title">Notifications</string>
+    <string name="slide_2_desc">Get notificatios about your tenants!</string>
+
+    <string name="slide_3_title">Add Tenants</string>
+    <string name="slide_3_desc">Now you can add your tenants any time to keep in touch with them!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_slider">Slider</string>
+
+</resources>
